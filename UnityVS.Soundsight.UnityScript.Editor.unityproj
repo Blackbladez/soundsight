@@ -95,23 +95,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.soundsight.CSharp.Plugins.csproj">
-      <Project>{96AA9670-CB61-7B1F-9BB5-2F10ADC6BB74}</Project>
-      <Name>UnityVS.soundsight.CSharp.Plugins</Name>
+    <ProjectReference Include="UnityVS.soundsight.UnityScript.Plugins.unityproj">
+      <Project>{547F0BB2-F78D-040C-0BAA-5B92DADF9E13}</Project>
+      <Name>UnityVS.soundsight.UnityScript.Plugins</Name>
     </ProjectReference>
     <ProjectReference Include="UnityVS.soundsight.CSharp.csproj">
       <Project>{465F5D7C-BB68-6D2F-8077-6EDDE390E2D0}</Project>
       <Name>UnityVS.soundsight.CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityVS.soundsight.UnityScript.Plugins.unityproj">
-      <Project>{547F0BB2-F78D-040C-0BAA-5B92DADF9E13}</Project>
-      <Name>UnityVS.soundsight.UnityScript.Plugins</Name>
+    <ProjectReference Include="UnityVS.soundsight.CSharp.Plugins.csproj">
+      <Project>{96AA9670-CB61-7B1F-9BB5-2F10ADC6BB74}</Project>
+      <Name>UnityVS.soundsight.CSharp.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\Image Effects\AntialiasingAsPostEffectEditor.js" />
     <Compile Include="Assets\Editor\Image Effects\BloomAndLensFlaresEditor.js" />
-    <Compile Include="Assets\Editor\Image Effects\BloomEditor.js" />
     <Compile Include="Assets\Editor\Image Effects\CameraMotionBlurEditor.js" />
     <Compile Include="Assets\Editor\Image Effects\ColorCorrectionCurvesEditor.js" />
     <Compile Include="Assets\Editor\Image Effects\ColorCorrectionLutEditor.js" />
@@ -197,6 +196,7 @@
     <None Include="Assets\Behave\Readme.txt" />
     <None Include="Assets\Maya Extensions\_Documentation\Changelog.txt" />
     <None Include="Assets\Maya Extensions\_Documentation\Readme.txt" />
+    <None Include="Assets\Project\Shaders\SoundSight.shader" />
     <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
@@ -297,6 +297,8 @@
     <Folder Include="Assets\Editor\Image Effects" />
     <Folder Include="Assets\Maya Extensions" />
     <Folder Include="Assets\Maya Extensions\_Documentation" />
+    <Folder Include="Assets\Project" />
+    <Folder Include="Assets\Project\Shaders" />
     <Folder Include="Assets\Standard Assets" />
     <Folder Include="Assets\Standard Assets\Glass Refraction (Pro Only)" />
     <Folder Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources" />
