@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CD737ECC-AEE9-79B7-597A-0411FFD20102}</ProjectGuid>
+    <ProjectGuid>{547F0BB2-F78D-040C-0BAA-5B92DADF9E13}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace></RootNamespace>
-    <AssemblyName>UnityVS.Soundsight.UnityScript.Plugins</AssemblyName>
+    <AssemblyName>UnityVS.soundsight.UnityScript.Plugins</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <NoConfig>true</NoConfig>
     <NoStdLib>true</NoStdLib>

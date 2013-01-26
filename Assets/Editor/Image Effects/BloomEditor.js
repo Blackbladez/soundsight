@@ -1,6 +1,6 @@
 
 #pragma strict
-
+/*
 @CustomEditor (Bloom)
 		
 class BloomEditor extends Editor 
@@ -158,3 +158,4 @@ class BloomEditor extends Editor
     	serObj.ApplyModifiedProperties();
     }
 }
+*/
