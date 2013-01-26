@@ -70,6 +70,12 @@
       <HintPath>Assets\StrumpyShaderEditor\Editor\StrumpyShaderEditor.dll</HintPath>
     </Reference>
     <Reference Include="UniRPGEditor">
+      <HintPath>Assets\UniRPG\Documentation\UniRPG\Editor\Scripts\UniRPGEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniRPGRuntime">
+      <HintPath>Assets\UniRPG\Documentation\UniRPG\Scripts\UniRPGRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="UniRPGEditor">
       <HintPath>Assets\UniRPG\Editor\Scripts\UniRPGEditor.dll</HintPath>
     </Reference>
     <Reference Include="UniRPGRuntime">
@@ -266,6 +272,7 @@
     <None Include="Assets\VisualizerStudio\Scripts\VisualizerStudio.xml" />
     <None Include="Assets\Behave\Editor\Behave.Unity.Editor.dll" />
     <None Include="Assets\StrumpyShaderEditor\Editor\StrumpyShaderEditor.dll" />
+    <None Include="Assets\UniRPG\Documentation\UniRPG\Editor\Scripts\UniRPGEditor.dll" />
     <None Include="Assets\UniRPG\Editor\Scripts\UniRPGEditor.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
@@ -309,6 +316,9 @@
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp" />
     <Folder Include="Assets\UniRPG" />
     <Folder Include="Assets\UniRPG\Documentation" />
+    <Folder Include="Assets\UniRPG\Documentation\UniRPG" />
+    <Folder Include="Assets\UniRPG\Documentation\UniRPG\Editor" />
+    <Folder Include="Assets\UniRPG\Documentation\UniRPG\Editor\Scripts" />
     <Folder Include="Assets\UniRPG\Editor" />
     <Folder Include="Assets\UniRPG\Editor\Scripts" />
     <Folder Include="Assets\UnityVS" />
