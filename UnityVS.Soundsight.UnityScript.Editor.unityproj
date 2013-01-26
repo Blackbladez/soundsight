@@ -95,6 +95,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityVS.soundsight.CSharp.Plugins.csproj">
+      <Project>{96AA9670-CB61-7B1F-9BB5-2F10ADC6BB74}</Project>
+      <Name>UnityVS.soundsight.CSharp.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityVS.soundsight.CSharp.csproj">
       <Project>{465F5D7C-BB68-6D2F-8077-6EDDE390E2D0}</Project>
       <Name>UnityVS.soundsight.CSharp</Name>
@@ -102,10 +106,6 @@
     <ProjectReference Include="UnityVS.soundsight.UnityScript.Plugins.unityproj">
       <Project>{547F0BB2-F78D-040C-0BAA-5B92DADF9E13}</Project>
       <Name>UnityVS.soundsight.UnityScript.Plugins</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityVS.soundsight.CSharp.Plugins.csproj">
-      <Project>{96AA9670-CB61-7B1F-9BB5-2F10ADC6BB74}</Project>
-      <Name>UnityVS.soundsight.CSharp.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -265,7 +265,6 @@
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
-    <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
     <None Include="Assets\UniRPG\Documentation\UniRPG_Ed.txt" />
     <None Include="Assets\VisualizerStudio\Editor\VisualizerStudioEditor.xml" />
@@ -313,7 +312,6 @@
     <Folder Include="Assets\StrumpyShaderEditor\Editor" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal" />
-    <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp" />
     <Folder Include="Assets\UniRPG" />
     <Folder Include="Assets\UniRPG\Documentation" />
     <Folder Include="Assets\UniRPG\Documentation\UniRPG" />

@@ -64,6 +64,9 @@
       <HintPath>Assets\Behave\Compatibility\Behave.dll</HintPath>
     </Reference>
     <Reference Include="UniRPGRuntime">
+      <HintPath>Assets\UniRPG\Documentation\UniRPG\Scripts\UniRPGRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="UniRPGRuntime">
       <HintPath>Assets\UniRPG\Scripts\UniRPGRuntime.dll</HintPath>
     </Reference>
     <Reference Include="VisualizerStudio">
@@ -242,7 +245,6 @@
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
-    <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
     <None Include="Assets\UniRPG\Documentation\UniRPG_Ed.txt" />
     <None Include="Assets\VisualizerStudio\Editor\VisualizerStudioEditor.xml" />
@@ -283,7 +285,6 @@
     <Folder Include="Assets\StrumpyShaderEditor\Editor" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal" />
-    <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp" />
     <Folder Include="Assets\UniRPG" />
     <Folder Include="Assets\UniRPG\Documentation" />
     <Folder Include="Assets\VisualizerStudio" />
