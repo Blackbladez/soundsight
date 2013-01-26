@@ -1,3 +1,4 @@
+using Assets.Scripts.Singleton;
 using UnityEngine;
 using System.Collections;
 
@@ -7,7 +8,7 @@ public class HeartCalmState : SKState<HeartModel>
     {
         // when you're in this state set your heart health to 
         // 100
-        _machine.context.HeartHealth = 100; 
+        Player.Instance.HeartHealth = 10;
     }
 
     public override void update(float deltaTime)

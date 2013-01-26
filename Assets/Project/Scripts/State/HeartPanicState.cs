@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Singleton;
+using UnityEngine;
 using System.Collections;
 
 public class HeartPanicState : SKState<HeartModel>
@@ -7,7 +8,7 @@ public class HeartPanicState : SKState<HeartModel>
     public override void begin()
     {
         // upon reaching this state your heart health decreases to 60
-        _machine.context.HeartHealth = 40;
+        Player.Instance.HeartHealth = 70;
     }
 
     public override void update(float deltaTime)

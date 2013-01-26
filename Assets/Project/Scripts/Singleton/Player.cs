@@ -17,5 +17,7 @@ namespace Assets.Scripts.Singleton
         {
             get { return instance; }
         }
+
+        public int HeartHealth { get; set; }
     }
 }
