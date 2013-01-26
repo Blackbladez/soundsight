@@ -19,5 +19,6 @@ namespace Assets.Scripts.Singleton
         }
 
         public int HeartHealth { get; set; }
+        public int Sensitivity { get; set; } // 3, 8, 12, 20
     }
 }

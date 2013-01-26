@@ -21,7 +21,8 @@ public class PlayerEnvironment : MonoBehaviour
 	    Vector3 forward = transform.TransformDirection(Vector3.forward);
         if(Physics.Raycast(transform.position, forward, Proximity))
         {
-            //SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * Player.Instance)));
+            SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * 8)));
+            //Debug.Log("Hit something");
         }
 	}
 }
