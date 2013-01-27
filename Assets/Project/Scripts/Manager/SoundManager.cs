@@ -47,6 +47,7 @@ namespace Assets.Project.Scripts.Manager
             {
                 AmbienceSource.clip = AmbientMusic;
                 AmbienceSource.loop = true;
+                AmbienceSource.volume = .5f;
                 AmbienceSource.Play(5);
             }
         }
