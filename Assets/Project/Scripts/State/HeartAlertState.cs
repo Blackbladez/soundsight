@@ -1,28 +1,30 @@
 ﻿using Assets.Scripts.Singleton;
-using UnityEngine;
-using System.Collections;
 
-public class HeartAlertState : SKState<HeartModel>
+namespace Assets.Project.Scripts.State
 {
-
-    public override void begin()
+    public class HeartAlertState : SKState<HeartModel>
     {
-        // upon reaching this state your heart health decreases to 80
-        //_machine.context.HeartHealth = 80; 
-        Player.Instance.HeartHealth = 20;
-    }
 
-    public override void update(float deltaTime)
-    {
-        // something will trigger the transition of states 
-        _machine.changeState<HeartAlertState>();
-
-        // or back one state
-        _machine.changeState<HeartCalmState>();
-    }
-
-    public override void end()
-    {
+        public override void begin()
+        {
+            // upon reaching this state your heart health decreases to 80
+            //_machine.context.HeartHealth = 80; 
+            Player.Instance.HeartHealth = 20;
         
+        }
+
+        public override void update(float deltaTime)
+        {
+            // something will trigger the transition of states 
+            _machine.changeState<HeartAlertState>();
+
+            // or back one state
+            _machine.changeState<HeartCalmState>();
+        }
+
+        public override void end()
+        {
+        
+        }
     }
 }
