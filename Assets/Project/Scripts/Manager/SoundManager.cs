@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Assets.Scripts.Singleton;
 using UnityEngine;
+using Holoville.HOTween;
 
 namespace Assets.Project.Scripts.Manager
 {
@@ -18,6 +19,7 @@ namespace Assets.Project.Scripts.Manager
         public AudioSource BreathingSource;
 
         private static SoundManager instance;
+        private bool lerpAudioOn = false;
 
         void Awake()
         {
@@ -65,14 +67,20 @@ namespace Assets.Project.Scripts.Manager
 
         IEnumerator LerpAudio(float startPitch, float endPitch)
         {
-            var i = 0.0f;
-            //var rate = 1.0f/10.0f;
-            while (i < 1.0f)
+            if(!lerpAudioOn)
             {
-                i += Time.deltaTime*0.00001f;
-                HeartbeatAudioSource.pitch = Mathf.Lerp(startPitch, endPitch, i);
+                lerpAudioOn = true;
+                var i = 0.0f;
+                //var rate = 1.0f/10.0f;
+                while (i < 1.0f)
+                {
+                    i += Time.deltaTime * 0.00001f;
+                    HeartbeatAudioSource.pitch = Mathf.Lerp(startPitch, endPitch, i);
+                    yield return null;
+                }
+                lerpAudioOn = false;
             }
-            yield return null;
+            
         }
 
         public void PlayBreathing()

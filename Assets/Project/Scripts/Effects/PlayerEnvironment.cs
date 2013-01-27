@@ -39,11 +39,11 @@ public class PlayerEnvironment : MonoBehaviour
     {
         if (hit.collider.gameObject.tag == "WinBox")
         {
-            Debug.Log("Player wins, on controller");
+            Debug.Log("Player wins");
         }
         if(hit.collider.gameObject.tag == "Monster")
         {
-            
+            Debug.Log("Player lost");
         }
     }
 }

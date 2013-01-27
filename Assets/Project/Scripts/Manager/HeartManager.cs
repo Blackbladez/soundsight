@@ -70,6 +70,8 @@ namespace Assets.Project.Scripts.Manager
                 StateManager.Instance.UpdateState(Model.State.Heart);
                 SoundManager.Instance.Refresh();
             }
+
+            Debug.Log("Heart rate: " + Player.Instance.HeartHealth + " also binh sucks.");
         }
     }
 }
