@@ -12,10 +12,11 @@ namespace Assets.Project.Scripts.State
         public override void update(float deltaTime)
         {
             // on some condition switch state
-            _machine.changeState<LightOffState>();
+            //_machine.changeState<LightOffState>();
 
             // or go back to on perhaps
-            _machine.changeState<LightFlickerState>();
+            //_machine.changeState<LightFlickerState>();
+
         }
 
         public override void end()
