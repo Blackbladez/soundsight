@@ -1,20 +1,28 @@
-using Assets.Project.Scripts.State;
+using Assets.Scripts.Singleton;
 using UnityEngine;
 
 namespace Assets.Project.Scripts.Manager
 {
     public class HeartManager : MonoBehaviour
     {
-        private SKStateMachine<HeartModel> _heartState; 
+        
         void Awake()
         {
-            var heartState = new HeartModel();
-            _heartState = new SKStateMachine<HeartModel>(heartState, new HeartCalmState());
+            
+            
         }
 	
         // Update is called once per frame
-        void Update () {
-	
+        void Update () 
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Player.Instance.State = "Alert";
+                StateManager.Instance.UpdateState(Model.State.Heart);
+                SoundManager.Instance.Refresh();
+            }
         }
+
+
     }
 }

@@ -20,5 +20,8 @@ namespace Assets.Scripts.Singleton
 
         public int HeartHealth { get; set; }
         public int Sensitivity { get; set; } // 3, 8, 12, 20
+        public float Rate { get; set; } // 1, 1.75, 2.5, 3
+        public string State { get; set; }
+        
     }
 }

@@ -1,11 +1,11 @@
-using UnityEngine;
-using System.Collections;
-
-public class HeartModel 
+namespace Assets.Project.Scripts.Model
 {
-    // variable decs for animations
-    // status
-    public int HeartHealth { get; set; }
+    public class HeartModel 
+    {
+        // variable decs for animations
+        // status
+        public int HeartHealth { get; set; }
 
 	
+    }
 }

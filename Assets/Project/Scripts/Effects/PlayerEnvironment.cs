@@ -33,5 +33,7 @@ public class PlayerEnvironment : MonoBehaviour
         {
             SightMaterial.SetColor("_Color", Color.black);
         }
+
+        
 	}
 }

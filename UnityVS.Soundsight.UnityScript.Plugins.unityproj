@@ -54,6 +54,9 @@
     <Reference Include="UnityEditor">
       <HintPath>$(UnityPath)\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="AudioToolkit_FreeVersion">
+      <HintPath>Assets\AudioToolkit\AudioToolkit\AudioToolkit_FreeVersion.dll</HintPath>
+    </Reference>
     <Reference Include="Behave.Unity.Assets">
       <HintPath>Assets\Behave\Behave.Unity.Assets.dll</HintPath>
     </Reference>
@@ -62,6 +65,12 @@
     </Reference>
     <Reference Include="Behave">
       <HintPath>Assets\Behave\Compatibility\Behave.dll</HintPath>
+    </Reference>
+    <Reference Include="HOTween">
+      <HintPath>Assets\HOTween\Plugins\HOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="HOTween">
+      <HintPath>Assets\SWS\Scripts\Holoville\HOTween.dll</HintPath>
     </Reference>
     <Reference Include="UniRPGRuntime">
       <HintPath>Assets\UniRPG\Documentation\UniRPG\Scripts\UniRPGRuntime.dll</HintPath>
@@ -172,9 +181,15 @@
     <None Include="Assets\Aubergines Shader Pack\Water Shaders\Shaders\Water-ReflRefr-Flow-Mask-Trans.shader" />
     <None Include="Assets\Aubergines Shader Pack\Water Shaders\Shaders\Water-ReflRefr-Mask.shader" />
     <None Include="Assets\Aubergines Shader Pack\Water Shaders\Shaders\Water-ReflRefr-Mask-Trans.shader" />
+    <None Include="Assets\AudioToolkit\Readme.txt" />
     <None Include="Assets\Behave\Changelog.txt" />
     <None Include="Assets\Behave\License.txt" />
     <None Include="Assets\Behave\Readme.txt" />
+    <None Include="Assets\Holoville\HOUnityEditor\Editor\HOEditorGUIFramework.xml" />
+    <None Include="Assets\Holoville\HOUnityEditor\Editor\HOEditorUtils.xml" />
+    <None Include="Assets\Holoville\readme.txt" />
+    <None Include="Assets\HOTween\Plugins\HOTween.XML" />
+    <None Include="Assets\HOTween\readme.txt" />
     <None Include="Assets\Maya Extensions\_Documentation\Changelog.txt" />
     <None Include="Assets\Maya Extensions\_Documentation\Readme.txt" />
     <None Include="Assets\Project\Shaders\SoundSight.shader" />
@@ -246,6 +261,11 @@
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
+    <None Include="Assets\SWS\Scripts\Holoville\HOTween.XML" />
+    <None Include="Assets\SWS\Scripts\Holoville\HOTween_License.txt" />
+    <None Include="Assets\SWS\Scripts\PlayMaker\SWS_PlayMaker_ReadMe.txt" />
+    <None Include="Assets\SWS\Textures\car\Shaders\GlassReflect.shader" />
+    <None Include="Assets\SWS\Textures\car\Shaders\LightsEmmissive.shader" />
     <None Include="Assets\UniRPG\Documentation\UniRPG_Ed.txt" />
     <None Include="Assets\VisualizerStudio\Editor\VisualizerStudioEditor.xml" />
     <None Include="Assets\VisualizerStudio\Scripts\VisualizerStudio.xml" />
@@ -264,7 +284,13 @@
     <Folder Include="Assets\Aubergines Shader Pack\Shaders\Terrain" />
     <Folder Include="Assets\Aubergines Shader Pack\Water Shaders" />
     <Folder Include="Assets\Aubergines Shader Pack\Water Shaders\Shaders" />
+    <Folder Include="Assets\AudioToolkit" />
     <Folder Include="Assets\Behave" />
+    <Folder Include="Assets\Holoville" />
+    <Folder Include="Assets\Holoville\HOUnityEditor" />
+    <Folder Include="Assets\Holoville\HOUnityEditor\Editor" />
+    <Folder Include="Assets\HOTween" />
+    <Folder Include="Assets\HOTween\Plugins" />
     <Folder Include="Assets\Maya Extensions" />
     <Folder Include="Assets\Maya Extensions\_Documentation" />
     <Folder Include="Assets\Project" />
@@ -284,6 +310,13 @@
     <Folder Include="Assets\StrumpyShaderEditor\Editor" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal" />
+    <Folder Include="Assets\SWS" />
+    <Folder Include="Assets\SWS\Scripts" />
+    <Folder Include="Assets\SWS\Scripts\Holoville" />
+    <Folder Include="Assets\SWS\Scripts\PlayMaker" />
+    <Folder Include="Assets\SWS\Textures" />
+    <Folder Include="Assets\SWS\Textures\car" />
+    <Folder Include="Assets\SWS\Textures\car\Shaders" />
     <Folder Include="Assets\UniRPG" />
     <Folder Include="Assets\UniRPG\Documentation" />
     <Folder Include="Assets\VisualizerStudio" />
