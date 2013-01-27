@@ -8,14 +8,29 @@ namespace Assets.Project.Scripts.Manager
     {
 
         public AudioClip HeartBeat;
+        public AudioClip Breathing;
+        public AudioClip Walk;
+        public AudioClip Run;
+        public AudioClip AmbientMusic;
         public AudioListener AbsurdAudioListener;
         public AudioSource AudioSource;
+        public AudioSource AmbienceSource;
+        public AudioSource MovementSource;
+        public AudioSource BreathingSource;
+
         private static SoundManager instance;
 
         void Awake()
         {
+            if (AmbienceSource == null)
+                AmbienceSource = gameObject.AddComponent<AudioSource>();
+            if (MovementSource == null)
+                MovementSource = gameObject.AddComponent<AudioSource>();
+            if (BreathingSource == null)
+                BreathingSource = gameObject.AddComponent<AudioSource>();
+
             if (instance == null) instance = this;
-            AbsurdAudioListener = Camera.mainCamera.GetComponent<AudioListener>();
+            //AbsurdAudioListener = Camera.mainCamera.GetComponent<AudioListener>();
 
             if (AbsurdAudioListener != null)
             {
@@ -27,6 +42,12 @@ namespace Assets.Project.Scripts.Manager
                     AudioSource.Play();
                     // it was a good day
                 }
+            }
+            if (AmbienceSource != null)
+            {
+                AmbienceSource.clip = AmbientMusic;
+                AmbienceSource.loop = true;
+                AmbienceSource.Play(5);
             }
         }
 
@@ -50,6 +71,35 @@ namespace Assets.Project.Scripts.Manager
                 AudioSource.pitch = Mathf.Lerp(startPitch, endPitch, i);
             }
             yield return null;
+        }
+
+        public void PlayBreathing()
+        {
+            BreathingSource.clip = Breathing;
+            BreathingSource.loop = true;
+            BreathingSource.Play();
+        }
+        public void StopBreathing()
+        {
+            BreathingSource.Stop();
+        }
+
+        public void PlayMovement(bool running)
+        {
+            if(running)
+            {
+                MovementSource.clip = Run;
+            }
+            else
+            {
+                MovementSource.clip = Walk;
+            }
+            MovementSource.loop = true;
+            MovementSource.Play();
+        }
+        public void StopMovement()
+        {
+            MovementSource.Stop();
         }
     }
 }
