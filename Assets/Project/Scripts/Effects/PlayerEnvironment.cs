@@ -33,7 +33,13 @@ public class PlayerEnvironment : MonoBehaviour
         {
             SightMaterial.SetColor("_Color", Color.black);
         }
-
-        
 	}
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.collider.gameObject.tag == "WinBox")
+        {
+            Debug.Log("Player wins, on controller");
+        }
+    }
 }

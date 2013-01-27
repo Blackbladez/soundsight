@@ -71,7 +71,5 @@ namespace Assets.Project.Scripts.Manager
                 SoundManager.Instance.Refresh();
             }
         }
-
-
     }
 }
