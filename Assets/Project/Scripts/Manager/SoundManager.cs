@@ -12,8 +12,7 @@ namespace Assets.Project.Scripts.Manager
         public AudioClip Walk;
         public AudioClip Run;
         public AudioClip AmbientMusic;
-        public AudioListener AbsurdAudioListener;
-        public AudioSource AudioSource;
+        public AudioSource HeartbeatAudioSource;
         public AudioSource AmbienceSource;
         public AudioSource MovementSource;
         public AudioSource BreathingSource;
@@ -28,21 +27,19 @@ namespace Assets.Project.Scripts.Manager
                 MovementSource = gameObject.AddComponent<AudioSource>();
             if (BreathingSource == null)
                 BreathingSource = gameObject.AddComponent<AudioSource>();
+            if (HeartbeatAudioSource == null)
+                HeartbeatAudioSource = gameObject.AddComponent<AudioSource>();
 
             if (instance == null) instance = this;
-            //AbsurdAudioListener = Camera.mainCamera.GetComponent<AudioListener>();
-
-            if (AbsurdAudioListener != null)
+            
+            if (HeartbeatAudioSource != null)
             {
-                if (HeartBeat != null && AudioSource != null)
-                {
-                    AudioSource.clip = HeartBeat;
-                    AudioSource.pitch = Player.Instance.Rate;
-                    AudioSource.loop = true;
-                    AudioSource.Play();
-                    // it was a good day
-                }
+                HeartbeatAudioSource.clip = HeartBeat;
+                HeartbeatAudioSource.pitch = Player.Instance.Rate;
+                HeartbeatAudioSource.loop = true;
+                HeartbeatAudioSource.Play();
             }
+
             if (AmbienceSource != null)
             {
                 AmbienceSource.clip = AmbientMusic;
@@ -59,7 +56,11 @@ namespace Assets.Project.Scripts.Manager
 
         public void Refresh()
         {
-            StartCoroutine(LerpAudio(AudioSource.pitch, Player.Instance.Rate));
+            StartCoroutine(LerpAudio(HeartbeatAudioSource.pitch, Player.Instance.Rate));
+            if (Player.Instance.HeartHealth >= 30)
+                PlayBreathing();
+            else
+                StopBreathing();
         }
 
         IEnumerator LerpAudio(float startPitch, float endPitch)
@@ -69,7 +70,7 @@ namespace Assets.Project.Scripts.Manager
             while (i < 1.0f)
             {
                 i += Time.deltaTime*0.00001f;
-                AudioSource.pitch = Mathf.Lerp(startPitch, endPitch, i);
+                HeartbeatAudioSource.pitch = Mathf.Lerp(startPitch, endPitch, i);
             }
             yield return null;
         }
@@ -87,20 +88,38 @@ namespace Assets.Project.Scripts.Manager
 
         public void PlayMovement(bool running)
         {
-            if(running)
+            if(!MovementSource.isPlaying)
             {
-                MovementSource.clip = Run;
+                if (running)
+                {
+                    MovementSource.clip = Run;
+                }
+                else
+                {
+                    MovementSource.clip = Walk;
+                }
+                MovementSource.loop = true;
+                MovementSource.Play();
             }
-            else
-            {
-                MovementSource.clip = Walk;
-            }
-            MovementSource.loop = true;
-            MovementSource.Play();
         }
         public void StopMovement()
         {
             MovementSource.Stop();
+        }
+
+        void Update()
+        {
+            if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S))
+            {
+                if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+                    PlayMovement(true);
+                else
+                    PlayMovement(false);
+            }
+            if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.S))
+            {
+                StopMovement();
+            }
         }
     }
 }

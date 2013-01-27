@@ -41,5 +41,9 @@ public class PlayerEnvironment : MonoBehaviour
         {
             Debug.Log("Player wins, on controller");
         }
+        if(hit.collider.gameObject.tag == "Monster")
+        {
+            
+        }
     }
 }
