@@ -260,6 +260,7 @@
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+    <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
     <None Include="Assets\SWS\Scripts\Holoville\HOTween.XML" />
     <None Include="Assets\SWS\Scripts\Holoville\HOTween_License.txt" />
@@ -310,6 +311,7 @@
     <Folder Include="Assets\StrumpyShaderEditor\Editor" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources" />
     <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal" />
+    <Folder Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp" />
     <Folder Include="Assets\SWS" />
     <Folder Include="Assets\SWS\Scripts" />
     <Folder Include="Assets\SWS\Scripts\Holoville" />
