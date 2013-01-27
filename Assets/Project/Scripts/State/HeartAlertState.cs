@@ -10,7 +10,8 @@ namespace Assets.Project.Scripts.State
             // upon reaching this state your heart health decreases to 80
             //_machine.context.HeartHealth = 80; 
             Player.Instance.HeartHealth = 20;
-        
+            Player.Instance.Sensitivity = 8;
+
         }
 
         public override void update(float deltaTime)

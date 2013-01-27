@@ -1,15 +1,20 @@
+using Assets.Project.Scripts.State;
 using UnityEngine;
-using System.Collections;
 
-public class HeartManager : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+namespace Assets.Project.Scripts.Manager
+{
+    public class HeartManager : MonoBehaviour
+    {
+        private SKStateMachine<HeartModel> _heartState; 
+        void Awake()
+        {
+            var heartState = new HeartModel();
+            _heartState = new SKStateMachine<HeartModel>(heartState, new HeartCalmState());
+        }
 	
-	}
+        // Update is called once per frame
+        void Update () {
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        }
+    }
 }
