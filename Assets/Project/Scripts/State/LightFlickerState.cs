@@ -1,5 +1,4 @@
 ﻿using Assets.Project.Scripts.Model;
-using Assets.Project.Scripts.Singleton;
 
 namespace Assets.Project.Scripts.State
 {
