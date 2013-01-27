@@ -7,6 +7,7 @@ public class PlayerEnvironment : MonoBehaviour
     public float Proximity = 25;
     public Color WallColor = Color.white;
     public Material SightMaterial;
+    public Material SightGroundMaterial;
 
 	// Use this for initialization
 	void Start () 
@@ -18,11 +19,19 @@ public class PlayerEnvironment : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    Vector3 forward = transform.TransformDirection(Vector3.forward);
-        if(Physics.Raycast(transform.position, forward, Proximity))
+	    RaycastHit hit;
+        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Proximity))
         {
-            SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * 8)));
-            //Debug.Log("Hit something");
+            if(hit.collider.gameObject.tag=="Wall")
+            {
+                SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * 20)));
+                SightGroundMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * 20)));
+            }
+                
+        }
+        else
+        {
+            SightMaterial.SetColor("_Color", Color.black);
         }
 	}
 }

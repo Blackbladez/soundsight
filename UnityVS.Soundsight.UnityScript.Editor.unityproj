@@ -197,7 +197,6 @@
     <None Include="Assets\Maya Extensions\_Documentation\Changelog.txt" />
     <None Include="Assets\Maya Extensions\_Documentation\Readme.txt" />
     <None Include="Assets\Project\Shaders\SoundSight.shader" />
-    <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
@@ -300,9 +299,6 @@
     <Folder Include="Assets\Project" />
     <Folder Include="Assets\Project\Shaders" />
     <Folder Include="Assets\Standard Assets" />
-    <Folder Include="Assets\Standard Assets\Glass Refraction (Pro Only)" />
-    <Folder Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources" />
-    <Folder Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders" />
     <Folder Include="Assets\Standard Assets\Image Effects (Pro Only)" />
     <Folder Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources" />
     <Folder Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders" />
