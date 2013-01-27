@@ -24,8 +24,8 @@ public class PlayerEnvironment : MonoBehaviour
         {
             if(hit.collider.gameObject.tag=="Wall")
             {
-                SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * 20)));
-                SightGroundMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * 20)));
+                SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * Player.Instance.Sensitivity)));
+                SightGroundMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * Player.Instance.Sensitivity)));
             }
                 
         }
