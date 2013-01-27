@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Assets.Project.Scripts.Model;
+﻿using Assets.Project.Scripts.Model;
+using Assets.Project.Scripts.Singleton;
 
 namespace Assets.Project.Scripts.State
 {
@@ -10,12 +7,17 @@ namespace Assets.Project.Scripts.State
     {
         public override void begin()
         {
-            // set some modifier that the 
+            // start an animation flicker dealy
+
         }
 
         public override void update(float deltaTime)
         {
-            
+            // on some condition switch state
+            _machine.changeState<LightOffState>();
+
+            // or go back to on perhaps
+            _machine.changeState<LightOnState>();
         }
 
         public override void end()
