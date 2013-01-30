@@ -67,7 +67,11 @@ namespace Assets.Project.Scripts.Manager
                 {
                     snapshotOfRestTime = Time.time + 1;
                     if (Player.Instance.HeartHealth > 0)
+<<<<<<< HEAD
                         Player.Instance.HeartHealth = Player.Instance.HeartHealth - 1;
+=======
+                        Player.Instance.HeartHealth = Player.Instance.HeartHealth + 1;
+>>>>>>> commit this shit
                 }
                 snapshotOfChaseTime = 0;
                 snapshotOfRunTime = 0;

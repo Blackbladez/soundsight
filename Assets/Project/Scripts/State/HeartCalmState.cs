@@ -9,7 +9,11 @@ namespace Assets.Project.Scripts.State
         {
             // when you're in this state set your heart health to 
             // 100
+<<<<<<< HEAD
             Player.Instance.Sensitivity = 3;
+=======
+            Player.Instance.Sensitivity = 4;
+>>>>>>> commit this shit
             Player.Instance.Rate = 1.0f;
 
         }

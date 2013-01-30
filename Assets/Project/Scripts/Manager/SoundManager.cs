@@ -20,6 +20,10 @@ namespace Assets.Project.Scripts.Manager
         public AudioSource BreathingSource;
         public AudioSource FlatlineSource;
 
+<<<<<<< HEAD
+=======
+        private VisManager VisManager;
+>>>>>>> commit this shit
         private static SoundManager instance;
         private bool lerpAudioOn = false;
 
@@ -64,6 +68,13 @@ namespace Assets.Project.Scripts.Manager
                 FlatlineSource.clip = Flatline;
                 FlatlineSource.volume = 0.5f;
             }
+<<<<<<< HEAD
+=======
+
+            VisManager = this.GetComponentInChildren<VisManager>();
+            VisManager.audioSource = HeartbeatAudioSource;
+
+>>>>>>> commit this shit
         }
 
         public static SoundManager Instance

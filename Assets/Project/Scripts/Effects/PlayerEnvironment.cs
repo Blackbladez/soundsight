@@ -35,13 +35,25 @@ public class PlayerEnvironment : MonoBehaviour
             cc.stepOffset = .4f;
         }
 
+<<<<<<< HEAD
+=======
+
+        Debug.Log("Intensity levels 2 dam high: " + Player.Instance.Sensitivity);
+        //SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * Player.Instance.Sensitivity)));
+        //SightGroundMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * Player.Instance.Sensitivity)));
+
+>>>>>>> commit this shit
 	    RaycastHit hit;
         if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Proximity))
         {
             if(hit.collider.gameObject.tag=="Wall")
             {
+<<<<<<< HEAD
                 SightMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * Player.Instance.Sensitivity)));
                 SightGroundMaterial.SetColor("_Color", Color.Lerp(WallColor, Color.black, Mathf.Cos(Time.time * Player.Instance.Sensitivity)));
+=======
+                
+>>>>>>> commit this shit
             }
                 
         }
